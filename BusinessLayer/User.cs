@@ -33,7 +33,8 @@ namespace BusinessLayer
         [Required][MaxLength(20)]
         public string Email { get; set; }
         public List<User> Friends { get; set; } 
-        public List<Genre> Games { get; set; }
+      //  [ForeignKey("Game")]
+        public List<Game> Games { get; set; }
 
         public User(string name, string surname, int age, string username, string password, string email)
         {
@@ -44,7 +45,7 @@ namespace BusinessLayer
             this.Password = password;
             this.Email = email;
             this.Friends = new List<User>();
-            this.Games = new List<Genre>();
+            this.Games = new List<Game>();
         }
     }
 }

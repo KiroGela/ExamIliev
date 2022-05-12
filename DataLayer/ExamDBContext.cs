@@ -16,7 +16,7 @@ namespace DataLayer
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("Server=127.0.0.1;Port=3306;Database=examDBUsers;Uid=root;Pwd=12345678;");
+            optionsBuilder.UseMySQL("Server=127.0.0.1;Port=3306;Database=examDBTests;Uid=root;Pwd=12345678;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

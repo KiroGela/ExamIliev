@@ -21,7 +21,7 @@ namespace BusinessLayer
         [Required]
         public string Name { get; set; }
 
-        [ForeignKey("User")]
+      //  [ForeignKey("User")]
         public List<User> Users { get; set; }
 
         public Genre(string name)

@@ -6,7 +6,7 @@ using System;
 
 namespace Testing
 {
-    public class Class1
+    public class Tests
     {
         private ExamDBContext _dbContext;
         private GenreContext _genreContext;
